@@ -1,4 +1,4 @@
-<div (dblclick)="changeReminder()" [ngClass]="{reminder:task.reminder}" class="task">
+<div (dblclick)="changeReminder(task)" [ngClass]="{reminder:task.reminder}" class="task">
     <h3>Text: {{task.text}}
         <fa-icon (click)="removeTask(task)" style="color: red;" [icon]="faTrash"></fa-icon>
     </h3>

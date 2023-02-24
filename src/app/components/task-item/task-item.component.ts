@@ -14,12 +14,14 @@ export class TaskItemComponent {
   };
   @Output() onDeleteTask:EventEmitter<Task>=new EventEmitter()
   faTrash = faTrash;
+  @Output() onToggleTask:EventEmitter<Task>=new EventEmitter()
   removeTask(task:Task){
     this.onDeleteTask.emit(task)
   }
 
-  changeReminder(){
+  changeReminder(task:Task){
     this.task.reminder=!this.task.reminder
+    this.onToggleTask.emit()
   }
   
 }
