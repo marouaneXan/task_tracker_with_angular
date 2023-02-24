@@ -1,5 +1,3 @@
 <div *ngFor="let task of tasks">
-    <p>Text: {{task.text}}</p>
-    <p>Day: {{task.day}}</p>
-    <hr>
+    <app-task-item [task]="task"></app-task-item>
   </div>

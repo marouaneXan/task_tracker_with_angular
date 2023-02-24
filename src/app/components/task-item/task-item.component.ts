@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
+import { Task } from 'src/app/Task';
 
 @Component({
   selector: 'app-task-item',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./task-item.component.css']
 })
 export class TaskItemComponent {
-
+  @Input() task:Task={
+    text: '',
+    day: '',
+    reminder: true
+  };
+  
 }
