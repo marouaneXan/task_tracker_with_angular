@@ -20,7 +20,7 @@ export class TaskItemComponent {
   }
 
   changeReminder(task:Task){
-    this.task.reminder=!this.task.reminder
+    task.reminder=!task.reminder
     this.onToggleTask.emit()
   }
   
