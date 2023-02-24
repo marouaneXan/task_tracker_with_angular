@@ -1,6 +1,6 @@
 <div class="task">
     <h3>Text: {{task.text}}
-        <fa-icon style="color: red;" [icon]="faTrash"></fa-icon>
+        <fa-icon (click)="removeTask(task)" style="color: red;" [icon]="faTrash"></fa-icon>
     </h3>
     <p>Day: {{task.day}}</p>
 </div>
