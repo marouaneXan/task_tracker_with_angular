@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   title = 'simple_app_with_angular';
+  toogleAddTask(){
+    
+  }
 }
