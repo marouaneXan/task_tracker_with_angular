@@ -17,5 +17,9 @@ export class TaskItemComponent {
   removeTask(task:Task){
     this.onDeleteTask.emit(task)
   }
+
+  changeReminder(){
+    this.task.reminder=!this.task.reminder
+  }
   
 }
