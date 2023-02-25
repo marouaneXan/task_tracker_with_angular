@@ -1,5 +1,5 @@
 <div class="container">
-    <app-modal-add-task></app-modal-add-task>
-    <app-header></app-header>
+    <app-modal-add-task [show]="show" [close]="close"></app-modal-add-task>
+    <app-header [show]="show"></app-header>
     <app-tasks></app-tasks>
 </div>

@@ -1,6 +1,6 @@
-<div class="modal">
+<div *ngIf="show" class="modal">
     <div class="modal-content">
-      <span class="close">&times;</span>
+      <span (click)="close()" class="close">&times;</span>
       <form>
         <label for="name">Text:</label>
         <input type="text" id="text" name="text" required>

@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-
+import { Component,Input } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,7 +6,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   title = 'simple_app_with_angular';
-  toogleAddTask(){
-    
+  @Input() show:boolean=false 
+  display(){
+    this.show=true
   }
 }
