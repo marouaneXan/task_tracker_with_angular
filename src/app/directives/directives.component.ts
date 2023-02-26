@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-directives',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./directives.component.css']
 })
 export class DirectivesComponent {
-
+  show:boolean=false;
+  array:Date[]=[]
+  i:number=0
+  toggleParagraph(){
+    this.show=!this.show
+    this.array.push(new Date())
+  }
 }

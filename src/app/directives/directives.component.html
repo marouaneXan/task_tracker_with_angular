@@ -1,1 +1,12 @@
-<p>directives works!</p>
+<button (click)="toggleParagraph()" class="btn">Display details</button>
+<p *ngIf="show" >
+    Lorem ipsum dolor sit amet, consectetur 
+    adipisicing elit. Labore consectetur officia deserunt? Quia non mollitia quos officiis beatae 
+    provident temporibus exercitationem velit facilis, architecto, totam, quisquam omnis cum? Quae,
+    porro.
+</p>
+<div *ngFor="let a of array;let i=index">
+    <p [ngStyle]="{backgroundColor:i>=5 ? 'blue':''}">
+        {{a}}
+    </p>
+</div>
